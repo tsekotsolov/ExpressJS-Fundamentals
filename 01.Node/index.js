@@ -2,7 +2,6 @@ let storage = require('./storage/storage')
 
 storage.put('firstKey', 'firstValue')
 storage.put('secondKey', 'secondValue')
-
 console.log(storage.get('secondKey'))
 console.log(storage.get('firstKey'))
 storage.update('secondKey', 'updatedsecondValue')

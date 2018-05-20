@@ -46,8 +46,8 @@ let save = () => {
   fs.writeFileSync('data.txt', JSON.stringify(db))
 }
 let load = () => {
-  let info = fs.readFileSync('data.txt', 'utf8')
-  db = JSON.parse(info)
+  let data = fs.readFileSync('data.txt', 'utf8')
+  db = JSON.parse(data)
 }
 
 module.exports = {
