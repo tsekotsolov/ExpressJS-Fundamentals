@@ -20,6 +20,14 @@ let get = (key) => {
   throw new Error('The KEY does not exists')
 }
 
+let getAll = () => {
+  if (Object.keys(db).length === 0 && db.constructor === Object) {
+    return 'Empty database';
+    return
+  }
+  return db;
+}
+
 let update = (key, value) => {
   validate.stringChecker(key)
   if (validate.keyExistsChecker(key, db)) {
@@ -45,9 +53,16 @@ let clear = () => {
 let save = () => {
   fs.writeFileSync('data.txt', JSON.stringify(db))
 }
+
 let load = () => {
+
+ try {
   let data = fs.readFileSync('data.txt', 'utf8')
   db = JSON.parse(data)
+ } catch (error) {
+  return true;
+ }
+
 }
 
 module.exports = {
@@ -57,5 +72,6 @@ module.exports = {
   del,
   clear,
   save,
-  load
+  load,
+  getAll
 }
