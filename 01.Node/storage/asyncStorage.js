@@ -1,3 +1,7 @@
+let validate = require('./validate')
+const fs = require('fs')
+let db = {}
+
 let update = (key, value) => {
   validate.stringChecker(key)
   if (validate.keyExistsChecker(key, db)) {
