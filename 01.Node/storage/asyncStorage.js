@@ -11,6 +11,7 @@ let update = (key, value) => {
   throw new Error('The KEY does not exists')
 }
 
+
 let del = (key) => {
   validate.stringChecker(key)
   if (validate.keyExistsChecker(key, db)) {
@@ -26,7 +27,7 @@ let clear = () => {
 
 let save = (callback) => {
 
-  fs.writeFileSync('data.txt', JSON.stringify(db),(err)=>{
+  fs.writeFile('data.txt', JSON.stringify(db),(err)=>{
     if(err){
       console.log(err);
       return;
@@ -39,7 +40,7 @@ let save = (callback) => {
 let load = (callback) => {
 
  try {
-  fs.readFileSync('data.txt', 'utf8',(err,data)=>{
+  fs.readFile('data.txt', 'utf8',(err,data)=>{
 
     if(err){
       console.log(err);
