@@ -1,6 +1,6 @@
 let storage = require('./storage/storage')
 
-//storage.load()
+storage.load()
 storage.put('first','firstValue')
 storage.put('second','secondValue')
 storage.put('third','thirdValue')
