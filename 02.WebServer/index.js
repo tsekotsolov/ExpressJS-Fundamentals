@@ -8,7 +8,6 @@ http.createServer((request, response) => {
   request.path = url.parse(request.url).pathname
 
   response.writeHtml = (path) => {
-
     fs.readFile(path, (err, data) => {
       if (err) {
         console.log(err)
@@ -29,7 +28,6 @@ http.createServer((request, response) => {
       response.end()
     })
   }
-
 
   for (const handler of handlers) {
     if (handler(request, response) !== true) {

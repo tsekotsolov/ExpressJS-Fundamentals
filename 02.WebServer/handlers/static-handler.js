@@ -1,7 +1,6 @@
 const fs = require('fs')
 
-function contentTypeChecker (url){
-  
+function contentTypeChecker (url) {
   let contentType = 'text/plain'
   if (url.endsWith('.css')) {
     contentType = 'text/css'
@@ -17,10 +16,7 @@ function contentTypeChecker (url){
 }
 
 module.exports = (request, response) => {
-
   if (request.path.startsWith('/public')) {
-    
-  
     fs.readFile(`.${request.path}`, (err, data) => {
       if (err) {
         console.log(err)
@@ -32,10 +28,8 @@ module.exports = (request, response) => {
       })
       response.write(data)
       response.end()
-
     })
   } else {
     return true
   }
-
 }
