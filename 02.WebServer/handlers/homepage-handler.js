@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 module.exports = (request, response) => {
-  if (request.path === '/') {
+  if (request.path === '/' || request.path ==='/home.html') {
     fs.readFile('./views/home.html', (err, data) => {
       if (err) {
         console.log(err)
