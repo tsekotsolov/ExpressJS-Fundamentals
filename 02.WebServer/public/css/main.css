@@ -33,11 +33,13 @@ h1 {
 }
 nav > ul {
     float: right;
+    list-style-type: none;
 }
 nav > ul > li {
     text-align: center;
     line-height: 40px;
     margin-left: 70px;
+    
 }
 nav > ul li ul li {
     width: 100%;
@@ -193,7 +195,7 @@ input[type=submit]:hover {
     background-color: pink;
     border-radius: 4px;
     padding-top:5px;
-    padding-bot:5px;
+    padding-bottom:5px;
 }
 
 #errMsg{
@@ -210,7 +212,7 @@ input[type=submit]:hover {
     background-color: green;
     border-radius: 4px;
     padding-top:5px;
-    padding-bot:5px;
+    padding-bottom:5px;
     
 }
 
