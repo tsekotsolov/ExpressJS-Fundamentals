@@ -5,14 +5,17 @@ const port = 7000
 const homePageHandler = require('./handlers/homepage-handler')
 const staticHandler = require('./handlers/static-handler')
 const viewAllHandler = require('./handlers/viewall-handler')
+const errorHandler = require('./handlers/error-handler')
+
 
 http.createServer((request, response) => {
   request.path = url.parse(request.url).pathname
-
+ 
   let handlers = [
     homePageHandler,
     viewAllHandler,
-    staticHandler
+    staticHandler,
+    errorHandler
   ]
 
   for (const handler of handlers) {
