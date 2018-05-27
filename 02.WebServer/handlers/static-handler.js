@@ -11,7 +11,6 @@ module.exports = (request, response) => {
     contentType = 'image/png'
   }
 
-
   fs.readFile(`.${request.path}`, (err, data) => {
     if (err) {
       response.writeHead(404)
@@ -22,7 +21,6 @@ module.exports = (request, response) => {
     response.writeHead(200, {
       'content-type': contentType
     })
-
     response.write(data)
     response.end()
   })
