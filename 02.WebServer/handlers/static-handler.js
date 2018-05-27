@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 function contentTypeChecker (url){
-
+  
   let contentType = 'text/plain'
   if (url.endsWith('.css')) {
     contentType = 'text/css'
