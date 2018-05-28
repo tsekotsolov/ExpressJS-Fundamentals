@@ -34,10 +34,8 @@ module.exports = (request, response) => {
       })
       response.write(data)
       response.end()
-
     })
   } else {
     return true
   }
-
 }
