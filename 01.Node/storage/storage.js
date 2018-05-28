@@ -22,10 +22,9 @@ let get = (key) => {
 
 let getAll = () => {
   if (Object.keys(db).length === 0 && db.constructor === Object) {
-    return 'Empty database';
-    return
+    return 'Empty database'
   }
-  return db;
+  return db
 }
 
 let update = (key, value) => {
@@ -55,14 +54,12 @@ let save = () => {
 }
 
 let load = () => {
-
- try {
-  let data = fs.readFileSync('data.txt', 'utf8')
-  db = JSON.parse(data)
- } catch (error) {
-  return true;
- }
-
+  try {
+    let data = fs.readFileSync('data.txt', 'utf8')
+    db = JSON.parse(data)
+  } catch (error) {
+    return true
+  }
 }
 
 module.exports = {

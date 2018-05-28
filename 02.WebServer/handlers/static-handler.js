@@ -1,7 +1,6 @@
 const fs = require('fs')
 
-function contentTypeChecker(url) {
-
+function contentTypeChecker (url) {
   let contentType = 'text/plain'
   if (url.endsWith('.css')) {
     contentType = 'text/css'
@@ -19,10 +18,7 @@ function contentTypeChecker(url) {
 }
 
 module.exports = (request, response) => {
-
-  if (request.path.startsWith('/public') && request.method ==='GET') {
-
-
+  if (request.path.startsWith('/public') && request.method === 'GET') {
     fs.readFile(`.${request.path}`, (err, data) => {
       if (err) {
         console.log(err)

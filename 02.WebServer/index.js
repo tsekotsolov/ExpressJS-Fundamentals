@@ -4,16 +4,15 @@ const fs = require('fs')
 const handlers = require('./handlers/require')
 const port = 7000
 
-let getStatusCode = (path) =>{
-let statusCode = 200;
-if (path.endsWith('error.html')) {
-  statusCode = 404;
-}
-return statusCode
+let getStatusCode = (path) => {
+  let statusCode = 200
+  if (path.endsWith('error.html')) {
+    statusCode = 404
+  }
+  return statusCode
 }
 
 http.createServer((request, response) => {
-  
   request.path = url.parse(request.url).pathname
 
   response.writeHtml = (path) => {
