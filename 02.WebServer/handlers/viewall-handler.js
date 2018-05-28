@@ -1,6 +1,6 @@
 
 module.exports = (request, response) => {
-  if (request.path === '/viewAllMovies') {
+  if (request.path === '/viewAllMovies' && request.method ==='GET') {
 
     response.writeHtml('./views/viewAll.html')
 

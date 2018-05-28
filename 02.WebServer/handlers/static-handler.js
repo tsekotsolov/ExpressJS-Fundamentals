@@ -1,7 +1,7 @@
 const fs = require('fs')
 
-function contentTypeChecker (url){
-  
+function contentTypeChecker(url) {
+
   let contentType = 'text/plain'
   if (url.endsWith('.css')) {
     contentType = 'text/css'
@@ -9,6 +9,8 @@ function contentTypeChecker (url){
     contentType = 'image/x-icon'
   } else if (url.endsWith('.png')) {
     contentType = 'image/png'
+  } else if (url.path.endsWith('.jpg')) {
+    contentType = 'image/jpg'
   } else if (url.path.endsWith('.js')) {
     contentType = 'application/javascript'
   }
@@ -18,9 +20,9 @@ function contentTypeChecker (url){
 
 module.exports = (request, response) => {
 
-  if (request.path.startsWith('/public')) {
-    
-  
+  if (request.path.startsWith('/public') && request.method ==='GET') {
+
+
     fs.readFile(`.${request.path}`, (err, data) => {
       if (err) {
         console.log(err)
