@@ -2,6 +2,7 @@ const http = require('http')
 const url = require('url')
 const fs = require('fs')
 const handlers = require('./handlers/require')
+const db = require('./config/dataBase')
 const port = 7000
 
 let getStatusCode = (path) => {
@@ -14,8 +15,9 @@ let getStatusCode = (path) => {
 
 http.createServer((request, response) => {
   request.path = url.parse(request.url).pathname
+  request.db = db
 
-  response.writeHtml = (path) => {
+  response.writeStaticHtml = (path) => {
     fs.readFile(path, (err, data) => {
       if (err) {
         console.log(err)
