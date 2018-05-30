@@ -8,7 +8,7 @@ module.exports = (request, response) => {
         return
       }
 
-      const movieTemplate = `<div class="movie" id="{{my_id}}"><img class="moviePoster" src="{{Your movie poster URL}}"/></div>`
+      const movieTemplate = `<div class="movie"><a href="/movies/{{my_id}}"><img class="moviePoster" src="{{Your movie poster URL}}"/></a></div>`
 
       let allMovies = request.db
         .map(m => movieTemplate.replace('{{Your movie poster URL}}', decodeURIComponent(m.moviePoster)))

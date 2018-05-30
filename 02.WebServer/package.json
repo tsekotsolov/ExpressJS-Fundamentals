@@ -11,5 +11,8 @@
     "database"
   ],
   "author": "Tseko Tsolov",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
 }
