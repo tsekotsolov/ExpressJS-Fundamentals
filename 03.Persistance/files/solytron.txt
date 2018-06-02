@@ -1,0 +1,252 @@
+http://solytron.bg/products/xml/catalog-category.xml?j_u=tsolov@unibox.bg&j_p=78dd14c0
+
+{869eec69-8f70-40ac-a41d-c8958d743ad3} - laptopi
+
+http://solytron.bg/products/xml/list.xml?propertyId=869eec69-8f70-40ac-a41d-c8958d743ad3&j_u=tsolov@unibox.bg&j_p=78dd14c0
+
+productId="2efa5850310a4f0d8c366f66bb88dc3c" groupId="ACER" codeId="NH.G6VEX.012" ean="4713392827662"
+
+http://solytron.bg/products/xml/product.xml?codeId=NX.GKFEX.016&groupId=ACER&j_u=tsolov@unibox.bg&j_p=78dd14c0
+
+
+d2e4bb08-46ea-4c08-a2b1-f04d81f76c97 - tv 
+
+http://solytron.bg/products/xml/list.xml?propertyId=d2e4bb08-46ea-4c08-a2b1-f04d81f76c97&j_u=tsolov@unibox.bg&j_p=78dd14c0
+
+
+http://solytron.bg/products/xml/product.xml?codeId=40PFT4101/12&groupId=PHILIPS_TV&j_u=tsolov@unibox.bg&j_p=78dd14c0
+
+<table>
+<tbody>
+<tr class="gray">
+<th style="text-align: left;">{propertyGroup[2]/property[2]/@name}</th>
+<td>{propertyGroup[2]/property[2]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[2]/property[3]/@name}</th>
+<td>{propertyGroup[2]/property[3]/value[1]}</td>
+</tr>
+<tr class="gray">
+<th style="text-align: left;">{propertyGroup[2]/property[4]/@name}</th>
+<td>{propertyGroup[2]/property[4]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[2]/property[5]/@name}</th>
+<td>{propertyGroup[2]/property[5]/value[1]}</td>
+</tr>
+<tr class="gray">
+<th style="text-align: left;">{propertyGroup[2]/property[6]/@name}</th>
+<td>{propertyGroup[2]/property[6]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[2]/property[7]/@name}</th>
+<td>{propertyGroup[2]/property[7]/value[1]}</td>
+</tr>
+<tr class="gray">
+<th style="text-align: left;">{propertyGroup[2]/property[8]/@name}</th>
+<td>{propertyGroup[2]/property[8]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[2]/property[9]/@name}</th>
+<td>{propertyGroup[2]/property[9]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[2]/property[10]/@name}</th>
+<td>{propertyGroup[2]/property[10]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[2]/property[11]/@name}</th>
+<td>{propertyGroup[2]/property[11]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[2]/property[12]/@name}</th>
+<td>{propertyGroup[2]/property[12]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[2]/property[13]/@name}</th>
+<td>{propertyGroup[2]/property[13]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[2]/property[14]/@name}</th>
+<td>{propertyGroup[2]/property[14]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[2]/property[15]/@name}</th>
+<td>{propertyGroup[2]/property[15]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[2]/property[16]/@name}</th>
+<td>{propertyGroup[2]/property[16]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[2]/property[17]/@name}</th>
+<td>{propertyGroup[2]/property[17]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[2]/property[18]/@name}</th>
+<td>{propertyGroup[2]/property[18]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[2]/property[19]/@name}</th>
+<td>{propertyGroup[2]/property[19]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[2]/property[20]/@name}</th>
+<td>{propertyGroup[2]/property[20]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[2]/property[21]/@name}</th>
+<td>{propertyGroup[2]/property[21]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[2]/property[22]/@name}</th>
+<td>{{propertyGroup[2]/property[22]/value[1]}</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+<table>
+<tbody>
+<tr class="gray">
+<th style="text-align: left;">{propertyGroup[3]/property[2]/@name}</th>
+<td>{propertyGroup[3]/property[2]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[3]/@name}</th>
+<td>{propertyGroup[3]/property[3]/value[1]}</td>
+</tr>
+<tr class="gray">
+<th style="text-align: left;">{propertyGroup[3]/property[4]/@name}</th>
+<td>{propertyGroup[3]/property[4]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[5]/@name}</th>
+<td>{propertyGroup[3]/property[5]/value[1]}</td>
+</tr>
+<tr class="gray">
+<th style="text-align: left;">{propertyGroup[3]/property[6]/@name}</th>
+<td>{propertyGroup[3]/property[6]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[7]/@name}</th>
+<td>{propertyGroup[3]/property[7]/value[1]}</td>
+</tr>
+<tr class="gray">
+<th style="text-align: left;">{propertyGroup[3]/property[8]/@name}</th>
+<td>{propertyGroup[3]/property[8]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[9]/@name}</th>
+<td>{propertyGroup[3]/property[9]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[10]/@name}</th>
+<td>{propertyGroup[3]/property[10]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[11]/@name}</th>
+<td>{propertyGroup[3]/property[11]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[12]/@name}</th>
+<td>{propertyGroup[3]/property[12]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[13]/@name}</th>
+<td>{propertyGroup[3]/property[13]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[14]/@name}</th>
+<td>{propertyGroup[3]/property[14]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[15]/@name}</th>
+<td>{propertyGroup[3]/property[15]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[16]/@name}</th>
+<td>{propertyGroup[3]/property[16]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[17]/@name}</th>
+<td>{propertyGroup[3]/property[17]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[18]/@name}</th>
+<td>{propertyGroup[3]/property[18]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[19]/@name}</th>
+<td>{propertyGroup[3]/property[19]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[20]/@name}</th>
+<td>{propertyGroup[3]/property[20]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[21]/@name}</th>
+<td>{propertyGroup[3]/property[21]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[22]/@name}</th>
+<td>{propertyGroup[3]/property[22]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[23]/@name}</th>
+<td>{propertyGroup[3]/property[23]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[24]/@name}</th>
+<td>{propertyGroup[3]/property[24]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[25]/@name}</th>
+<td>{propertyGroup[3]/property[25]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[26]/@name}</th>
+<td>{propertyGroup[3]/property[26]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[27]/@name}</th>
+<td>{propertyGroup[3]/property[27]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[28]/@name}</th>
+<td>{propertyGroup[3]/property[28]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[29]/@name}</th>
+<td>{propertyGroup[3]/property[29]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[30]/@name}</th>
+<td>{propertyGroup[3]/property[30]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[31]/@name}</th>
+<td>{propertyGroup[3]/property[31]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[32]/@name}</th>
+<td>{propertyGroup[3]/property[32]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[33]/@name}</th>
+<td>{propertyGroup[3]/property[33]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[34]/@name}</th>
+<td>{propertyGroup[3]/property[34]/value[1]}</td>
+</tr>
+<tr>
+<th style="text-align: left;">{propertyGroup[3]/property[35]/@name}</th>
+<td>{propertyGroup[3]/property[35]/value[1]}</td>
+</tr>
+</tbody>
+</table>
