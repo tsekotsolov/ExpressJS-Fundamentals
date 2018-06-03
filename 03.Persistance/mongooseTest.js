@@ -17,12 +17,12 @@ let connectionString = 'mongodb://localhost:27017/cats'
 mongoose
   .connect(connectionString)
   .then(() => {
-    // Store cast into base
+    // Store cats into base
 
     let myCat = new Cat({
-      name: 'Juli',
-      age: 21,
-      color: 'white'
+      name: 'Misho',
+      age: 44,
+      color: 'gold'
     })
 
     myCat.save((err, info) => {
