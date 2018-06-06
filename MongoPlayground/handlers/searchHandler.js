@@ -13,7 +13,6 @@ module.exports = (req, res) => {
       }
 
       if (fields.tagName && fields.afterDate && fields.beforeDate) {
-        console.log(fields)
         let userTags = fields.tagName.split(',').filter(e => e !== '').map(e => e.trim())
 
         Tag.find({name: {$in: userTags}}).then(data => {
@@ -27,7 +26,7 @@ module.exports = (req, res) => {
 
             let imageHtml = ''
 
-            Image.find({tags: arrayOfIds.toString()}).sort({creationDate: -1}).where('creationDate').gt(fields.afterDate).lt(fields.beforeDate).limit(fields.Limit * 1).then((data) => {
+            Image.find({tags: {$in: arrayOfIds}}).sort({creationDate: -1}).where('creationDate').gt(fields.afterDate).lt(fields.beforeDate).limit(fields.Limit * 1).then((data) => {
               for (const image of data) {
                 imageHtml += `<fieldset id ="${image._id}"> <legend>${image.title}</legend> 
                 <img src="${image.url}">
