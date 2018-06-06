@@ -141,7 +141,6 @@ module.exports = (req, res) => {
         let userTags = fields.tagName.split(',').filter(e => e !== '').map(e => e.trim())
 
         Tag.find({name: {$in: userTags}}).then(data => {
-         
           let arrayOfIds = data.map(m => m._id)
 
           fs.readFile('./views/results.html', 'utf8', (err, originalHtml) => {
