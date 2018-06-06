@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const ImageSchema = new mongoose.Schema({
   url: {type: mongoose.SchemaTypes.String, required: true},
   creationDate: {type: mongoose.SchemaTypes.Date, required: true, default: Date.now},
+  title: {type: mongoose.SchemaTypes.String, required: true},
   description: {type: mongoose.SchemaTypes.String},
   tags: [{type: mongoose.SchemaTypes.ObjectId}]
 })
