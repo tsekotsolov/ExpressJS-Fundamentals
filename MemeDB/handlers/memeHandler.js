@@ -67,7 +67,7 @@ let getDetails = (req, res) => {
   <img src="${targetedMeme.memeSrc}" alt=""/>
   <h3>Title  ${targetedMeme.title}</h3>
   <p> ${targetedMeme.description}</p>
-  <button><a href="${targetedMeme.posterSrc}">Download Meme</a></button>
+  <button><a href="${targetedMeme.memeSrc}">Download Meme</a></button>
   </div>`
 
   readFile('./views/details.html', 'utf8', (data) => {
