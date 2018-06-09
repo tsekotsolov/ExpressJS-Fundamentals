@@ -4,6 +4,7 @@ const qs = require('querystring')
 const url = require('url')
 const formidable = require('formidable')
 const shortid = require('shortid')
+const http = require('http')
 
 function readFile (path, charset, callback) {
   fs.readFile(path, charset, (err, data) => {
@@ -67,7 +68,7 @@ let getDetails = (req, res) => {
   <img src="${targetedMeme.memeSrc}" alt=""/>
   <h3>Title  ${targetedMeme.title}</h3>
   <p> ${targetedMeme.description}</p>
-  <button><a href="${targetedMeme.posterSrc}">Download Meme</a></button>
+  <button><a href="${targetedMeme.memeSrc}/download">Download Meme</a></button>
   </div>`
 
   readFile('./views/details.html', 'utf8', (data) => {
@@ -116,6 +117,22 @@ let addMeme = (req, res) => {
   })
 }
 
+let downloadMeme = (req, res) => {
+  let path = url.parse(req.url)
+  let filename = shortid.generate()
+
+  let file = fs.createWriteStream(`${filename}.jpg`)
+
+  http.get(`http://localhost:2323${path.href.slice(0, -9)}`, function (res) {
+    res.pipe(file)
+  })
+
+  res.writeHead(302, {
+    'Location': '/'
+  })
+  res.end()
+}
+
 module.exports = (req, res) => {
   if (req.pathname === '/viewAllMemes' && req.method === 'GET') {
     viewAll(req, res)
@@ -125,6 +142,8 @@ module.exports = (req, res) => {
     addMeme(req, res)
   } else if (req.pathname.startsWith('/getDetails') && req.method === 'GET') {
     getDetails(req, res)
+  } else if (req.pathname.endsWith('download') && req.method === 'GET') {
+    downloadMeme(req, res)
   } else {
     return true
   }
