@@ -24,6 +24,6 @@ module.exports = (app) => {
 
   app.all('*', (req, res) => {
     res.status(404)
-    res.send('404 not Found')
+    res.render('error404')
   })
 }
