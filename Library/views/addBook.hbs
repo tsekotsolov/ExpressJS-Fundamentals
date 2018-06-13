@@ -1,0 +1,29 @@
+<h1>Add New Book</h1>
+<div id="errBox">
+    <h2 id="errMsg">Please fill all fields</h2>
+</div>
+
+<div id="succssesBox">
+    <h2 id="succssesMsg">Book Added</h2>
+</div>
+
+
+
+<div class="container">
+    <form action="/addBook" method="POST" onsubmit="validate()">
+        <label for="bookTitle">Title</label>
+        <input type="text" id="bookTitle" name="bookTitle" placeholder="The title of the book">
+
+        <label for="bookYear">Year</label>
+        <input type="text" id="bookYear" name="bookYear" placeholder="Year of release">
+
+        <label for="bookPoster">Poster URL</label>
+        <input type="text" id="bookPoster" name="bookPoster" placeholder="Link to a poster">
+
+        <label for="bookAuthor">Book author</label>
+        <input type="text" id="bookAuthor" name="bookAuthor" placeholder="Book author">
+
+        <input type="submit" value="Submit">
+
+    </form>
+</div>
