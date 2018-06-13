@@ -18,8 +18,24 @@
                 <ul>
                     <li><a href="/addBook">Add Book</a></li>
                     <li><a href="/viewAllBooks">View All Books</a></li>
+
+                    {{#if currentUser}}
+                    <li>Hello, {{currentUser.username}}</li>
+                    <li>
+                        <form id="logout-form" action="/logout" method="POST"></form>
+                        <a href="javascript:document.getElementById('logout-form').submit()">Logout</a>
+                    </li>
+                    {{else}}
+                    <li><a href="/register">Register</a></li>
+                    <li><a href="/login">Login</a></li>
+                    {{/if}}
                 </ul>
+               
             </nav>
+
+            {{#if globalError}}
+            <div class="container"><h3>{{globalError}}</h3></div>
+            {{/if}}
         </div>
     </header>
     {{{body}}}

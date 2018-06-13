@@ -13,6 +13,9 @@ require('./config/express-config')(app, config.development)
 // Set up routes
 require('./config/routes')(app)
 
+// Set up passport
+require('./config/passport')()
+
 app.listen(port, () => {
   console.log(`Server started on port ${port}`)
 })

@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const User = require('../models/User')
 // mongoose.Promise = global.Promise
 
 module.exports = (config) => {
@@ -12,6 +13,9 @@ module.exports = (config) => {
       return
     }
     console.log('Mongo connected successfully')
+
+    // Add admin user on first connect
+    User.seedAdminUser()
   })
 
   db.on('error', (err) => {

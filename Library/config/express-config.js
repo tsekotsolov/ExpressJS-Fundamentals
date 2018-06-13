@@ -5,6 +5,9 @@ const express = require('express')
 const handlebars = require('express-handlebars')
 const fileUploader = require('express-fileupload')
 const bodyParser = require('body-parser')
+const cookieParser = require('cookie-parser')
+const session = require('express-session')
+const passport = require('passport')
 
 module.exports = (app, config) => {
   // Handlebars set up
@@ -27,4 +30,23 @@ module.exports = (app, config) => {
   app.use(bodyParser.urlencoded({
     extended: false
   }))
+
+  // User and Auth setup
+  app.use(cookieParser())
+
+  app.use(session({
+    secret: 'secretoftheuniverse',
+    resave: false,
+    saveUninitialized: false
+  }))
+
+  app.use(passport.initialize())
+  app.use(passport.session())
+
+  app.use((req, res, next) => {
+    if (req.user) {
+      res.locals.currentUser = req.user
+    }
+    next()
+  })
 }
