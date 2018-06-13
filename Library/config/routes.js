@@ -1,10 +1,11 @@
 const handlers = require('../handlers')
+const auth = require('./auth')
 
 module.exports = (app) => {
   app.get('/', handlers.homeHandler)
 
-  app.get('/addBook', handlers.addBookHandler.getForm)
-  app.post('/addBook', handlers.addBookHandler.postForm)
+  app.get('/addBook', auth.isAuthenticated, handlers.addBookHandler.getForm)
+  app.post('/addBook', auth.isAuthenticated, handlers.addBookHandler.postForm)
 
   app.get('/viewAllBooks', handlers.viewAllHandler)
 
