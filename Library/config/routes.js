@@ -15,8 +15,8 @@ module.exports = (app) => {
 
   app.post('/logout', handlers.usersHandler.logout)
 
-  app.get('/login',handlers.usersHandler.loginGet)
-  app.post('/login',handlers.usersHandler.loginPost)
+  app.get('/login', handlers.usersHandler.loginGet)
+  app.post('/login', handlers.usersHandler.loginPost)
 
   app.all('*', (req, res) => {
     res.status(404)
