@@ -4,6 +4,9 @@ const auth = require('./auth')
 module.exports = (app) => {
   app.get('/', handlers.homeHandler)
 
+  // authentication for loggeed users auth.isAuthenticated
+  // authentication for users with specific role auth.isInRole('Admin')
+
   app.get('/addBook', auth.isAuthenticated, handlers.addBookHandler.getForm)
   app.post('/addBook', auth.isAuthenticated, handlers.addBookHandler.postForm)
 
