@@ -37,10 +37,13 @@ h1 {
 }
 
 nav ul {
-    list-style-type: none;
+    width:100%;
+    list-style-type:none;
+    display:flex;
+    justify-content: space-between 
 }
 
-nav>ul>li {
+ .right>li, .left>li {
     display: inline-block;
     border: 2px solid black;
     padding: 5px 10px;
@@ -49,7 +52,8 @@ nav>ul>li {
     margin-left: 15px;
 }
 
-nav>ul li ul li {
+
+nav ul li ul li {
     width: 100%;
     text-align: left;
 }

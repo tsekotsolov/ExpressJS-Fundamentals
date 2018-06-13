@@ -16,10 +16,11 @@
                 <a href="/" class="logo"><img class="logo" src="/public/images/expressjs-card.png" alt="expressLogo"></a>
                 <input type="checkbox" id="nav" /><label for="nav"></label>
                 <ul>
-                    <li><a href="/addBook">Add Book</a></li>
+                    <div class="left"> <li><a href="/addBook">Add Book</a></li>
                     <li><a href="/viewAllBooks">View All Books</a></li>
-
-                    {{#if currentUser}}
+                    </div>
+                   
+                    <div class="right">{{#if currentUser}}
                     <li>Hello, {{currentUser.username}}</li>
                     <li>
                         <form id="logout-form" action="/logout" method="POST"></form>
@@ -29,6 +30,8 @@
                     <li><a href="/register">Register</a></li>
                     <li><a href="/login">Login</a></li>
                     {{/if}}
+                    </div>
+                    
                 </ul>
                
             </nav>
