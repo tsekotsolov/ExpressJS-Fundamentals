@@ -223,19 +223,37 @@ input[type=submit]:hover {
 
 /* books view all */
 
+.container{
+    display:flex;
+}
 .book{
     border: solid 1px gray;
     display:inline-block;
     max-width: 30%;
-    padding: 1%;
     margin: 1%;
     border-radius: 4px;
+    
+    
+}
+
+.book a img{
+    
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.book a{
+    
+    display: block;
+    height:100%
     
 }
 
 .bookPoster{
     display: inline-block;
     max-width: 100%; 
+  
 }
 
 .bookPoster:hover{
