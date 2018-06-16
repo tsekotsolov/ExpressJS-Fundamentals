@@ -5,7 +5,6 @@ module.exports = {
 
   getForm: (req, res) => {
     Category.find({}).then((categories) => {
-      console.log(categories)
       res.render('addHotel', {categories})
     })
   },
@@ -20,8 +19,9 @@ module.exports = {
     }
 
     Hotel.create(currentHotel).then((obj) => {
-      Category.find({'categoryTitle': 'req.body.category'}).then((cat) => {
+      Category.findOne({categoryTitle: req.body.category}).then((cat) => {
         cat.hotels.push(obj._id)
+        cat.save()
       })
 
       res.locals.successMessage = 'Hotel added'
