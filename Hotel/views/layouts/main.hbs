@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hotels</title>
+    <link href="/public/css/site.css" type="text/css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/public/img/favicon.ico" />
+    
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <ul class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/addHotel">Generate Hotel</a></li>
+                <li><a href="/list">List</a></li>
+                <li><a href="/addCategories">Add Categories</a></li>
+                {{#if currentUser}}
+                <li>{{currentUser.username}}</li>
+                <li>
+                    <form id="logout-form" action="/logout" method="post"></form>
+                    <a href="javascript:document.getElementById('logout-form').submit()">Logout</a>
+                </li>
+                {{else}}
+                <li><a href="/loginRegister">Login/Register</a></li>
+
+                {{/if}}
+            </ul>
+        </header>
+
+        <section> {{#if successMessage}}
+            <span id="success">{{successMessage}}</span> {{/if}} 
+            {{#if globalError}}
+            <span id="error">{{globalError}}</span> {{/if}}
+        </section>
+
+        <main>
+            {{{body}}}
+        </main>
+    </div>
+    <script src="public/js/jq.js"></script>
+    <script src="public/js/js.js"></script>
+</body>
+
+</html>
