@@ -11,6 +11,13 @@
       </select>
       <br>
       <br>
+      <select class='picker' name="category">
+        {{#each categories}}
+      <option value="{{this.categoryTitle}}">{{this.categoryTitle}}</option>
+      {{/each}}
+      </select>
+      <br>
+      <br>
       <textarea name="description" id="" cols="35" rows="10" placeholder="description"></textarea>
       <br>
 

@@ -22,8 +22,8 @@ module.exports = (app) => {
   app.get('/details', handlers.hotelHandler.details)
   app.post('/comment', handlers.hotelHandler.comment)
 
-  app.get('/addCategories', handlers.categoryHandler.getForm)
-  app.post('/addCategories', handlers.categoryHandler.postForm)
+  app.get('/addCategories', auth.isInRole('Admin'), handlers.categoryHandler.getForm)
+  app.post('/addCategories', auth.isInRole('Admin'), handlers.categoryHandler.postForm)
 
   app.all('*', (req, res) => {
     res.status(404)

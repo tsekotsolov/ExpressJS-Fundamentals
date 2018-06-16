@@ -4,7 +4,10 @@ const Category = require('mongoose').model('Category')
 module.exports = {
 
   getForm: (req, res) => {
-    res.render('addHotel')
+    Category.find({}).then((categories) => {
+      console.log(categories)
+      res.render('addHotel', {categories})
+    })
   },
   postForm: (req, res) => {
     let currentHotel = {
@@ -12,9 +15,15 @@ module.exports = {
       location: req.body.location,
       image: req.body.image,
       type: req.body.type,
-      description: req.body.description
+      description: req.body.description,
+      category: req.body.category
     }
+
     Hotel.create(currentHotel).then((obj) => {
+      Category.find({'categoryTitle': 'req.body.category'}).then((cat) => {
+        cat.hotels.push(obj._id)
+      })
+
       res.locals.successMessage = 'Hotel added'
       res.render('addHotel')
     }).catch((err) => {

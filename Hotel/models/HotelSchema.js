@@ -10,7 +10,8 @@ let hotel = new mongoose.Schema({
   creationDate: {type: mongoose.SchemaTypes.Date, default: Date.now},
   likes: [{type: mongoose.SchemaTypes.ObjectId, ref: 'User'}],
   views: {type: mongoose.SchemaTypes.Number, default: 0},
-  comments: [commentSchema]
+  comments: [commentSchema],
+  category: {type: mongoose.SchemaTypes.String}
 
 })
 
