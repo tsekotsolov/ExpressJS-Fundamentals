@@ -22,7 +22,8 @@ module.exports = (app) => {
   app.get('/edit', auth.isAuthenticated, handlers.editArticleHandler.editGet)
   app.post('/edit', auth.isAuthenticated, handlers.editArticleHandler.editPost)
 
-  app.get('/lockStatus',auth.isInRole('Admin'), handlers.lockStatusHandler)
+  app.post('/search', handlers.searchHandler)
+  app.get('/lockStatus', auth.isInRole('Admin'), handlers.lockStatusHandler)
 
   app.get('/register', handlers.usersHandler.registerGet)
   app.post('/register', handlers.usersHandler.registerPost)

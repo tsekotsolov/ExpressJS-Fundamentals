@@ -1,0 +1,12 @@
+<section>
+  <h2>Search results for: {{keyword.keyword}}</h2>
+  <div class="spacer">
+    <ul>
+      {{#each arrayOfMatches}}
+      <li>
+        <a href="/article?id={{this._id}}">{{this.title}}</a>
+      </li>
+     {{/each}}
+    </ul>
+  </div>
+</section>

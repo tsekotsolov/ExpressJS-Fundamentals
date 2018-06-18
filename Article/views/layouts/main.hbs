@@ -19,8 +19,8 @@
                 <a href="/">Main Page</a>
                 <a href="/latest-article">Latest Article</a>
                 <a href="/all-articles">All Articles</a>
-                <form>
-                    <input type="text">
+                <form action="/search" enctype="multipart/form-data" method="POST">
+                    <input type="text" name="keyword">
                     <input type="submit" value="Search">
                 </form>
                 <a href="/createArticle">Create New Article</a>

@@ -8,6 +8,7 @@ const historyHandler = require('./historyHandler')
 const editArticleHandler = require('./editArticleHandler')
 const editHistoryHandler = require('./editHistoryHandler')
 const lockStatusHandler = require('./lockStatusHandler')
+const searchHandler = require('./searchHandler')
 
 module.exports = {
   homeHandler,
@@ -19,5 +20,6 @@ module.exports = {
   historyHandler,
   editArticleHandler,
   editHistoryHandler,
-  lockStatusHandler
+  lockStatusHandler,
+  searchHandler
 }
