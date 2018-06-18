@@ -32,7 +32,6 @@ let favHandler = (req, res) => {
 }
 
 let resData = (req, res) => {
-
   fs.readFile('.' + req.pathname, (err, data) => {
     if (err) {
       console.log(err)
@@ -52,7 +51,7 @@ module.exports = (req, res) => {
   } else if (req.pathname.startsWith('/public/') && req.method === 'GET') {
     resData(req, res)
   } else {
-      res.write('404')
+    res.write('404')
     res.end()
   }
 }
